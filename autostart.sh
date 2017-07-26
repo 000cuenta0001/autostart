@@ -10,15 +10,19 @@ sh /storage/scripts2/upgrade2.sh
 ) &
 (
 sleep 60
-sh /storage/scripts/upgrade.sh
-) &
-(
-sleep 60
 sh /storage/scripts3/upgrade3.sh
 ) &
 (
 sleep 60
+sh /storage/scripts4/upgrade4.sh
+) &
+(
+sleep 60
 python /storage/scripts/noip.py
+) &
+(
+sleep 60
+sh /storage/scripts/upgrade.sh
 ) &
 # Rest of autostart.sh goes here...
 /storage/.kodi/addons/tools.hd-idle/bin/hd-idle -a sda -i 600 /storage/.kodi/addons/tools.hd-idle/bin/hd-idle -a sdb -i 600 
