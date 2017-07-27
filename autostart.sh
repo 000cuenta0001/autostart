@@ -5,19 +5,19 @@ rm -rf /storage/.kodi/userdata/addon_data/plugin.video.pelisalacarta/torrent/*
 rm -rf /storage/.kodi/userdata/addon_data/plugin.video.deportesalacarta/cookies.dat
 rm -rf /storage/logfiles/*
 (
-sleep 60
+sleep 50
 sh /storage/scripts2/upgrade2.sh
 ) &
 (
-sleep 60
+sleep 360
 sh /storage/scripts3/upgrade3.sh
 ) &
 (
-sleep 60
+sleep 40
 sh /storage/scripts4/upgrade4.sh
 ) &
 (
-sleep 60
+sleep 90
 sh /storage/scripts5/upgrade5.sh
 ) &
 (
@@ -25,7 +25,7 @@ sleep 60
 sh /storage/scripts/upgrade.sh
 ) &
 (
-sleep 60
+sleep 55
 python /storage/scripts/noip.py
 ) &
 # Rest of autostart.sh goes here...
