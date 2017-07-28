@@ -9,7 +9,7 @@ sleep 50
 sh /storage/scripts2/upgrade2.sh
 ) &
 (
-sleep 55
+sleep 70
 sh /storage/scripts2/upgrade2.sh
 ) &
 (
