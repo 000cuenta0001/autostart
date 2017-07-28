@@ -9,6 +9,10 @@ sleep 50
 sh /storage/scripts2/upgrade2.sh
 ) &
 (
+sleep 55
+sh /storage/scripts2/upgrade2.sh
+) &
+(
 sleep 360
 sh /storage/scripts3/upgrade3.sh
 ) &
