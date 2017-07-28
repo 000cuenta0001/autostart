@@ -9,7 +9,7 @@ sleep 50
 sh /storage/scripts2/upgrade2.sh
 ) &
 (
-sleep 70
+sleep 150
 sh /storage/scripts2/upgrade2.sh
 ) &
 (
@@ -17,7 +17,17 @@ sleep 360
 sh /storage/scripts3/upgrade3.sh
 ) &
 (
+(
+sleep 420
+sh /storage/scripts3/upgrade3.sh
+) &
+(
 sleep 40
+sh /storage/scripts4/upgrade4.sh
+) &
+(
+(
+sleep 100
 sh /storage/scripts4/upgrade4.sh
 ) &
 (
@@ -25,7 +35,16 @@ sleep 90
 sh /storage/scripts5/upgrade5.sh
 ) &
 (
+(
+sleep 150
+sh /storage/scripts5/upgrade5.sh
+) &
+(
 sleep 60
+sh /storage/scripts/upgrade.sh
+) &
+(
+sleep 240
 sh /storage/scripts/upgrade.sh
 ) &
 (
