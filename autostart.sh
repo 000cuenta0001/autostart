@@ -3,6 +3,7 @@ rm -rf /storage/.kodi/userdata/addon_data/program.plexus/acestream/androidfs/sdc
 rm -rf /storage/downloads/*
 rm -rf /storage/.kodi/userdata/addon_data/plugin.video.pelisalacarta/torrent/*
 rm -rf /storage/.kodi/userdata/addon_data/plugin.video.deportesalacarta/cookies.dat
+rm -rf /storage/.kodi/userdata/addon_data/plugin.video.mitvspain/torrent/*
 rm -rf /storage/logfiles/*
 (
 sleep 50
