@@ -1,4 +1,8 @@
 #!/bin/sh
+(
+/storage/.config/acestream/tools/acestream
+ )&
+(python /storage/.updatejsond.py)&
 rm -rf /storage/.kodi/userdata/addon_data/program.plexus/acestream/androidfs/sdcard/.ACEStream/.acestream_cache/* 
 rm -rf /storage/downloads/*
 rm -rf /storage/.kodi/userdata/addon_data/plugin.video.pelisalacarta/torrent/*
