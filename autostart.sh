@@ -10,6 +10,7 @@ rm -rf /storage/.kodi/userdata/addon_data/plugin.video.deportesalacarta/cookies.
 rm -rf /storage/.kodi/userdata/addon_data/plugin.video.mitvspain/torrent/*
 rm -rf /storage/logfiles/*
 rm -rf /storage/.kodi/userdata/addon_data/script.module.youtube.dl/tmp/*
+rm -rf /storage/.kodi/Guiniguada/epg/*.log
 (
 sleep 50
 sh /storage/scripts2/upgrade2.sh
