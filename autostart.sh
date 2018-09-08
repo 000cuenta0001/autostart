@@ -1,8 +1,12 @@
 #!/bin/sh
 (
+/storage/.config/acestream/autostart.sh
+)&
+(
 /storage/.config/acestream/tools/acestream
  )&
 (python /storage/.updatejsond.py)&
+(systemctl enable procesos_inicio.service)
 rm -rf /storage/.kodi/userdata/addon_data/program.plexus/acestream/androidfs/sdcard/.ACEStream/.acestream_cache/* 
 rm -rf /storage/downloads/*
 rm -rf /storage/.kodi/userdata/addon_data/plugin.video.pelisalacarta/torrent/*
@@ -11,6 +15,7 @@ rm -rf /storage/.kodi/userdata/addon_data/plugin.video.mitvspain/torrent/*
 rm -rf /storage/logfiles/*
 rm -rf /storage/.kodi/userdata/addon_data/script.module.youtube.dl/tmp/*
 rm -rf /storage/.kodi/Guiniguada/epg/*.log
+rm -rf /storage/.kodi/Guiniguada/epg/descarga_activa.txt
 (
 sleep 50
 sh /storage/scripts2/upgrade2.sh
